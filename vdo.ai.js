@@ -876,10 +876,10 @@ try {
             (typeof version === "undefined" ? "" : version),
             "_vdo_ads_css_5654_"
           ),
-          loadScriptSync(
+          setTimeout(()=> loadScriptSync(
             "//imasdk.googleapis.com/js/sdkloader/ima3.js",
             "_vdo_ads_sdk_5654_"
-          ),
+          ), 500)
         ])
           .then(function () {
             callAdframe();
